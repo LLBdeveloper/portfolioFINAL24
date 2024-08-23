@@ -1,0 +1,58 @@
+---
+interface Props {
+	title: string;
+}
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image" href="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/planets.png?alt=media&token=9bf9385b-bf62-4fe2-9745-5b77304466c7" />
+		<meta name="generator" content={Astro.generator} />
+		<title>LLB PORTFOLIO</title>
+	</head>
+	<body>
+		<slot />
+		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+
+	
+
+	</body>
+</html>
+<style is:global>
+	@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+	
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #000000;
+		background-size: 224px;
+		color: antiquewhite;
+
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>

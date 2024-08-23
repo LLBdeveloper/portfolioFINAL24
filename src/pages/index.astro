@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro'
+import StarsNow from '../components/StarsNow.astro'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+import About from '../components/About.astro'
+import Technologies from '../components/Technologies.astro'
+import Projects from '../components/Projects.astro'
+import Contact from '../components/Contact.astro'
+
+
+---
+<Layout title="Welcome to Astro.">
+
+	<Header/>
+	
+	<main class=" snap-y snap-mandatory relative w-full h-screen overflow-x-hidden scroll-m-0"> 
+		
+		
+		<section id="home" class="w-full h-screen snap-center"> 
+			<StarsNow/>
+		</section>
+		
+		<section id="about" class="w-full h-screen bg-black pt-20 snap-center ">
+			<About/>
+		</section>
+		
+		<section id="tecnologies" class="w-full h-screen bg-black snap-center pt-20 justify-center items-center flex ">
+			<Technologies/>
+		</section>
+		
+		<section id="projects" class="w-full h-screen bg-black snap-center pt-20 justify-center items-center flex ">
+			<Projects/>
+		</section>
+
+		<section id="contact" class="w-full h-screen mt-5  bg-black snap-center pt-20 justify-center items-center flex ">
+			<Contact/>
+		</section>
+
+		<footer class="snap-center">
+			<Footer />
+			
+		</footer>
+
+	</main>
+
+
+</Layout>
+
+
+<!-- 
+textoABOUTMEportfolio
+"¡Bienvenido a mi rincón digital donde la creatividad y la innovación se fusionan con las últimas tecnologías! En este espacio, te invito a explorar el conjunto de herramientas y tecnologías que he dominado a lo largo de mi trayectoria como desarrollador. Desde el robusto y versátil JavaScript hasta las modernas bibliotecas como React, cada tecnología que selecciono para mis proyectos tiene un propósito específico: llevar mis ideas desde la concepción hasta la realidad digital de manera eficiente y elegante.
+
+Con un sólido dominio de Git para la gestión de versiones, y la destreza en la creación de interfaces de usuario con Tailwind CSS y Bootstrap, cada proyecto es una oportunidad para desafiar mis límites y explorar nuevas posibilidades. Y con la introducción de tecnologías como Astro, la construcción de sitios web se vuelve aún más emocionante, brindando un rendimiento excepcional sin sacrificar la experiencia del desarrollador.
+
+Aquí, en este carrusel de tecnologías, te invito a sumergirte en mi mundo digital, donde cada línea de código es una oportunidad para la creatividad y la innovación. ¡Espero que disfrutes del viaje tanto como yo lo hice al crearlo!"
+
+
+
+
+
+En mi trayectoria como desarrollador, he dominado una amplia gama de tecnologías que me permiten crear experiencias digitales innovadoras y funcionales. Desde el robusto ecosistema de JavaScript, hasta el poderoso framework de React que impulsa las interfaces de usuario dinámicas y receptivas. Mi experiencia en herramientas de control de versiones como Git y en el diseño ágil con metodologías como Bootstrap y Tailwind, me permiten colaborar eficazmente en proyectos de equipo y entregar resultados excepcionales. ¡Descubre más sobre las tecnologías que utilizo y cómo las aplico en mis proyectos a continuación!
+
+
+
+
+
+
+¡Bienvenido a mi sección de tecnologías! Aquí encontrarás un vistazo rápido a las herramientas y tecnologías que utilizo para dar vida a mis proyectos. Desde la versatilidad y potencia de JavaScript, hasta la eficiencia y modularidad de React. Me apoyo en herramientas como Git para un control de versiones robusto, y Tailwind CSS y Bootstrap para una experiencia de diseño ágil y adaptativa. Además, si quieres explorar más allá, ¡te invito a descubrir Astro, una nueva forma de construir sitios web que me tiene entusiasmado! ¡Sumérgete y descubre cómo estas tecnologías se combinan para crear experiencias únicas y emocionantes en cada proyecto!
+ 
+
+
+
+-->

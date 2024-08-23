@@ -1,0 +1,110 @@
+---
+import Footer from '../components/Footer.astro'
+import Layout from '../layouts/Layout.astro'
+import CarouselDegrees from '../components/CarouselDegrees.astro'
+
+
+---
+<Layout title="Welcome to Astro.">
+
+    <header  class=" bg-white py-4 px-10 flex items-center fixed top-0  w-full justify-center sm:justify-between z-50">
+        <div class="" >
+            
+            <a class="flex flex-grow basic-0 items-center justify-center sm:justify-normal" href="/#home">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/planets.png?alt=media&token=9bf9385b-bf62-4fe2-9745-5b77304466c7" class="h-10 w-10"  alt="logo">
+            
+                <h1 class="pb-1 mx-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 font-extrabold text-xs sm:text-sm md:text-lg lg:text-xl">&lt;LLB/&gt;</h1>
+            </a>
+            
+        </div >
+        <nav class="hidden sm:block">
+            <ul class="text-black flex text-xs sm:text-sm md:text-lg lg:text-xl  [&>li>a]:inline-block [&>li>a]:font-bold [&>li>a]:px-4 [&>li>a]:py-2">
+                <li><a class="hover:bg-fuchsia-600 rounded mx-1" href="/#about">About</a></li>
+                <li><a class="hover:bg-fuchsia-600 rounded mx-1" href="/#tecnologies">Tecnologies</a></li>
+                <li><a class="hover:bg-fuchsia-600 rounded mx-1" href="/#projects">Projects</a></li>
+                <li><a class="hover:bg-fuchsia-600 rounded mx-1" href="/#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="mt-20 h-full w-full p-3 sm:p-10 text-center rounded-3xl"
+    style="background: linear-gradient(to bottom, #222, #888 );">
+
+    <div class="flex justify-center items-center">
+        <h2 class="text-center = sm:text-center mb-8 text-xl sm:text-5xl md:text-6xl lg:text-7xl   bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 font-extrabold">HELLO AND WELCOME TO MY WEBSITE! </h2>
+
+        <div class="w-full flex justify-center sm:m-10">
+            <img src="../../public/foto.png" class="rounded-3xl opacity-80 " alt="">
+        </div>
+    </div>
+        <div class="sm:p-5">
+            
+            
+            <p class="text-2xl mb-3 font-bold">
+                
+                I am Lautaro Lucas Bertera, a Bachelor's student in Software Development at U.P.E.
+                With a solid background in technology and web development. Previously, he completed a Frontend degree at CoderHouse, which consisted of three courses in total. In addition, I have a diploma in Data Science and Artificial Intelligence from the National University of San Martín (UNSAM). For more than a year I have been working as a freelancer creating websites with my startup "WebMaster Studio".
+            </p>
+
+            <CarouselDegrees/>
+
+            <p class="text-2xl mb-3 font-bold ">
+                During my experience, I have acquired extensive knowledge in various areas of development, from frontend design to the implementation of advanced solutions in artificial intelligence. My approach focuses on creative problem solving and delivering effective, customized solutions to the challenges my clients face.
+            </p>
+            <p class="text-2xl mb-3 font-bold">
+                I feel comfortable working with technologies such as <span class="text-zinc-800">React, JavaScript, HTML, CSS</span> and tools such as <span class="text-zinc-800">Tailwind, Bootstrap or MUI </span>to develop custom projects. Additionally, I have acquired a good command of <span class="text-zinc-800">Git and GitHub</span>, which allows me to efficiently manage version control of my projects and collaborate effectively with other developers. I also have knowledge of <span class="text-zinc-800">Python, C, NodeJS, Wordpress, Sass, Astro, PhotoShop</span> and a basic level of English that allows me to read documentation without problems.
+            </p>
+            <div class="flex justify-end items-center">
+                <img src="../../public/planet.png" class="hidden sm:flex sm:h-[5rem] m-5 lg:h-[10rem] " alt="">
+                <p class="text-2xl mb-3 font-bold ">
+                    I am committed to meeting deadlines and delivering quality projects to my clients. In addition to being very self-taught and always learning something new. In my free time, I enjoy maintaining an active and healthy lifestyle, practicing outdoor sports such as skateboarding, snowboarding and kitesurfing. I also love experimenting with cooking recipes and exploring different culinary cultures.
+                </p>
+            </div>
+                
+            <p class="text-2xl mb-3 font-bold">
+                I am excited to continue developing in the field of web development and to face new challenges that allow me to grow as a professional. <span class="text-zinc-800">Thank you for visiting my page and I hope to collaborate with you on future projects!</span>
+            </p>
+            <h3 class="text-3xl mt-20 font-bold  ">
+                
+            </h3>
+        </div>
+        
+
+
+        </div>
+
+    </div>
+
+
+
+>
+
+    
+
+
+
+
+
+
+
+
+    <Footer/>
+</Layout>
+
+
+<!-- 
+
+        Soy Lautaro Lucas Bertera, un estudiante de Licenciatura en Desarrollo de Software en U.P.E. 
+        Con una sólida formación en tecnología y desarrollo web. Anteriormente, completé una carrera de Frontend en CoderHouse, que consistió en tres cursos en total. Además, tengo una diplomatura en Ciencia de Datos e Inteligencia Artificial de la Universidad Nacional de San Martín (UNSAM). Hace mas de un año trabajo como freelance creando sitios web con mi emprendimiento "WebMaster Studio".
+
+        Durante mi experiencia, he adquirido un amplio conocimiento en diversas áreas del desarrollo, desde el diseño frontend hasta la implementación de soluciones avanzadas en inteligencia artificial. Mi enfoque se centra en la resolución creativa de problemas y en ofrecer soluciones efectivas y personalizadas para los desafíos que enfrentan mis clientes.
+
+        Me siento cómodo trabajando con tecnologías como React, JavaScript, HTML, CSS y herramientas como Tailwind, Bootstrap o MUI para desarrollar proyectos personalizados. Además, he adquirido un buen dominio de Git y GitHub, lo que me permite gestionar eficientemente el control de versiones de mis proyectos y colaborar eficazmente con otros desarrolladores. También tengo conocimientos en Python, C, NodeJS, Wordpress, Sass, Astro, PhotoShop y un nivel básico de inglés que me permite leer documentación sin problemas.
+
+        Estoy comprometido a cumplir con los plazos y a entregar proyectos de calidad a mis clientes. Ademas de ser muy autodidacta y estar siempre aprendiendo algo nuevo. En mi tiempo libre, disfruto manteniendo un estilo de vida activo y saludable, practicando deportes al aire libre como skateboarding, snowboard y kitesurf. También me encanta experimentar con las  recetas de cocina y explorar diferentes culturas culinarias.
+
+        Estoy emocionado de seguir desarrollándome en el campo del desarrollo web y de enfrentar nuevos desafíos que me permitan crecer como profesional. 
+
+        Gracias por visitar mi página y espero poder colaborar contigo en futuros proyectos! 
+-->

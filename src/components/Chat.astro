@@ -1,0 +1,51 @@
+<p class="text-md text-white font-bold font-mono flex sm:hidden mt-10 mx-3 text-center "> 
+    Welcome to my website! I am Lautaro Lucas Bertera, developer and eternal student. To know more about me, click the "see more" button.
+  <!-- Hello and welcome to my website! I am Lautaro Lucas Bertera,  a Bachelor of Software Development student at U.P.E. with a solid background in technology. Previously I completed the Frontend Developer degree at CoderHouse, which consisted of three courses in total. In addition, I have a diploma in Data Science and Artificial Intelligence from the National University of San Martín (UNSAM). -->
+</p>
+<div class=" bg-violet-900 p-3  rounded-3xl mx-10 w-[90%]   hidden sm:flex">
+    <div class="gap-2.5 p-4 ">
+        <div class="flex my-2">
+            <img class="w-20 h-20 rounded-full bg-black p-1 " src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/alien.png?alt=media&token=9fd63c48-49ca-4f53-b38b-6e41524e3170" alt="Jese image">
+            <div  id="chat" class="text-xl text-black font-bold font-mono flex justify-center items-center mx-4 p-5 max-h-[30em] w-full  leading-1.5  border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700 ">
+                
+            </div>
+        </div>
+    </div>
+    
+<div/>
+
+<script>
+    const chatContainer = document.getElementById('chat');
+  const message = 'Welcome to my website! I am Lautaro Lucas Bertera, a Bachelor of Software Development student at U.P.E. with a solid background in technology. Previously I completed the Frontend Developer degree at CoderHouse, which consisted of three courses in total. In addition, I have a diploma in Data Science and Artificial Intelligence from the National University of San Martín (UNSAM). For more than a year I have been working as a freelancer creating websites with my startup "WebMaster Studio". ';
+  
+  function simulateTyping(message) {
+    let index = 0;
+    const typingInterval = setInterval(() => {
+      if (index < message.length) {
+        chatContainer.textContent += message[index];
+        index++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 10); // Intervalo de tiempo entre cada letra (100 milisegundos en este ejemplo)
+  }
+  
+  // Función para manejar la intersección
+  function handleIntersection(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        simulateTyping(message);
+        observer.unobserve(entry.target); // Dejar de observar una vez que comienza la escritura
+      }
+    });
+  }
+  
+  // Crear un observer
+  const observer = new IntersectionObserver(handleIntersection, {
+    threshold: 0.5 // Cuando al menos el 50% del elemento sea visible
+  });
+  
+  // Observar el contenedor del chat
+  observer.observe(chatContainer);
+  
+  </script>

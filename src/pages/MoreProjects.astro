@@ -1,0 +1,54 @@
+---
+import CarouselProjects from "../components/CarouselProjects.astro";
+import ProjectsDetail from "../components/ProjectsDetail.astro";
+import Layout from '../layouts/Layout.astro'
+import Footer from "../components/Footer.astro";
+
+---
+<Layout title="Welcome to Astro.">
+
+    <header  class=" bg-white py-4 px-10 flex items-center fixed top-0  w-full justify-center sm:justify-between z-50">
+        <div class="" >
+            
+            <a class="flex flex-grow basic-0 items-center justify-center sm:justify-normal" href="/#home">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/planets.png?alt=media&token=9bf9385b-bf62-4fe2-9745-5b77304466c7" class="h-10 w-10"  alt="logo">
+            
+                <h1 class="pb-1 mx-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 font-extrabold text-xs sm:text-sm md:text-lg lg:text-xl">&lt;LLB/&gt;</h1>
+            </a>
+            
+        </div >
+        <nav class="hidden sm:block">
+            <ul class="text-black flex text-xs sm:text-sm md:text-lg lg:text-xl  [&>li>a]:inline-block [&>li>a]:font-bold [&>li>a]:px-4 [&>li>a]:py-2">
+                <li><a class="hover:bg-fuchsia-600 rounded mx-1" href="/#about">About</a></li>
+                <li><a class="hover:bg-fuchsia-600 rounded mx-1" href="/#tecnologies">Tecnologies</a></li>
+                <li><a class="hover:bg-fuchsia-600 rounded mx-1" href="/#projects">Projects</a></li>
+                <li><a class="hover:bg-fuchsia-600 rounded mx-1" href="/#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>/>
+
+
+    <div class="h-full w-full mt-10 p-3 sm:p-10">
+
+        <h1 class="sm:m-10 text-center sm:tracking-widest text-lg md:text-3l lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 font-extrabold ">PROJECTS</h1>
+
+        
+        <div class="w-full  flex justify-center my-20">
+            <CarouselProjects/>
+        </div>
+        <h3 class="sm:m-10 text-2xl text-center font-bold ">Here you can see some of my projects with their description and the technologies that were used. You can visit them with the button and you will also see their repository on GitHub in case you want to see the code.</h3>
+
+
+        <h2 class=" mt-20 sm:mt-40 text-center sm:tracking-widest text-lg md:text-3xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 font-extrabold ">Details of the projects</h2>
+
+        <div class="mt-5 sm:mt-20">
+            <ProjectsDetail/>
+        </div>
+
+
+        
+    </div>
+    <Footer/>
+
+</Layout>
