@@ -1,99 +1,54 @@
 ---
-import Chat from './Chat.astro'
+import Chat from './Chat.astro';
 ---
 
-<!-- <div class="  overflow-hidden flex items-center border-4 m-5 rounded-3xl border-neutral-800 bg-position-center bg-size-auto bg-cover bg-opacity-50 bg-image " style="background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/moon2.jpg?alt=media&token=b4244afd-8180-4cf7-a73c-e4cd6c868dfc');"> -->
+<div class="overflow-hidden mx-2 p-1 sm:m-5 sm:p-5 h-full w-full border-4 border-neutral-800 rounded-3xl bg-position-center bg-size-auto bg-cover bg-image" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/moon2.jpg?alt=media&token=b4244afd-8180-4cf7-a73c-e4cd6c868dfc');">
 
-
-<div class="overflow-hidden mx-2 p-1 sm:m-5  sm:p-5  h-full w-full  border-4 border-neutral-800 rounded-3xl bg-position-center bg-size-auto bg-cover bg-image " style="background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/moon2.jpg?alt=media&token=b4244afd-8180-4cf7-a73c-e4cd6c868dfc');">
-
-    <div class=" flex sm:justify-start justify-center  sm:mb-10 sm:m-10 mt-5">
-        <img src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/galaxy2.png?alt=media&token=ef723c52-9ec5-41dc-973d-7c71490a98c6" class=" h-[2rem] sm:h-[3rem] md:h-[4rem] lg:h-[5rem] xl:h-[6rem] me-5" alt="">
-        <h2 class="  text-xl sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 font-extrabold ">
+    <div class="flex sm:justify-start justify-center sm:mb-10 sm:m-10 mt-5">
+        <img src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/galaxy2.png?alt=media&token=ef723c52-9ec5-41dc-973d-7c71490a98c6" class="h-[2rem] sm:h-[3rem] md:h-[4rem] lg:h-[5rem] xl:h-[6rem] me-5" alt="">
+        <h2 class="text-xl sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 font-extrabold">
             ABOUT 
         </h2>
     </div>
 
-    <div class="  overflow-hidden flex justify-center items-center ">
+    <div class="overflow-hidden flex justify-center items-center">
 
         <Chat />
 
-        <!-- desktop -->
-        <div class="max-w-[20rem] me-10 hidden lg:flex flex-col justify-center items-center ">
-            <img src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/alien.png?alt=media&token=9fd63c48-49ca-4f53-b38b-6e41524e3170" class="mb-5 hidden lg:flex w-full lg:w-[15rem] xl:w-[20rem]  " alt="">
-            <a href="/MoreAboutMe" class="relative inline-flex items-center justify-center text-center p-1 mb-2 me-2 overflow-hidden text-xl font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 ">
-                <span class="w-[15rem] relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 ">
+        <!-- Desktop -->
+        <div class="max-w-[20rem] me-10 hidden lg:flex flex-col justify-center items-center">
+            <img src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/alien.png?alt=media&token=9fd63c48-49ca-4f53-b38b-6e41524e3170" class="mb-5 hidden lg:flex w-full lg:w-[15rem] xl:w-[20rem]" alt="">
+            <a href="/MoreAboutMe" class="relative inline-flex items-center justify-center text-center p-1 mb-2 me-2 overflow-hidden text-xl font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+                <span class="w-[15rem] relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                     MORE ABOUT ME !
                 </span>
             </a>
-            <button id="downloadButton" class="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-xl font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 ">
-                <span class="flex items-center w-[15rem] relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 "><svg class="w-9 h-9 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
-                    <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
-                </svg>
+            <a href="/cv-frontEnd.pdf" download class="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-xl font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+                <span class="flex items-center w-[15rem] relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    <svg class="w-9 h-9 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+                        <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+                    </svg>
                     DOWNLOAD CV
                 </span>
-            </button>
+            </a>
         </div>
 
     </div>
 
-    <!-- mobile -->
-    <div class="w-full text-center sm:hidden  mt-10">
-        <img src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/alien.png?alt=media&token=9fd63c48-49ca-4f53-b38b-6e41524e3170" class="mb-5 hidden lg:flex w-full lg:w-[15rem] xl:w-[20rem]  " alt="">
-        <a href="/MoreAboutMe" class="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-md font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 ">
-            <span class="w-[10rem] relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 ">
+    <!-- Mobile -->
+    <div class="w-full text-center sm:hidden mt-10">
+        <img src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/alien.png?alt=media&token=9fd63c48-49ca-4f53-b38b-6e41524e3170" class="mb-5 hidden lg:flex w-full lg:w-[15rem] xl:w-[20rem]" alt="">
+        <a href="/MoreAboutMe" class="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-md font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+            <span class="w-[10rem] relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 MORE ABOUT ME !
             </span>
         </a>
-        <button class="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-md font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 ">
-            <span class="w-[10rem] relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 ">
+        <a href="/cv-frontEnd.pdf" download class="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-md font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+            <span class="w-[10rem] relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 DOWNLOAD CV
             </span>
-        </button>
+        </a>
     </div>
 
 </div>
-
-<script>
-
-document.getElementById("downloadButton").addEventListener("click", function() {
-    // URL del archivo PDF
-    var fileUrl = "/public/cv-frontEnd.pdf";
-    
-    // Nombre del archivo que se mostrará al descargar
-    var fileName = "cv-frontEnd.pdf";
-    
-    // Crear un elemento <a> temporal para iniciar la descarga
-    var a = document.createElement("a");
-    a.href = fileUrl;
-    a.download = fileName;
-    
-    // Agregar el elemento <a> al cuerpo del documento
-    document.body.appendChild(a);
-    
-    // Simular un clic en el enlace para iniciar la descarga
-    a.click();
-    
-    // Eliminar el elemento <a> después de la descarga
-    document.body.removeChild(a);
-});
-</script>
-
-
-
-
-<!-- ///////////////////////////////
-ESTO SERIA PARA PONER EN UN  MODAL o tipo alert en un boton SEE MORE!
-///
-
-
-
-
-<p class="text-black">
-
-    ¡Hola y bienvenido a mi web! <br>
-Soy Lautaro Lucas Bertera, un estudiante de Lic. Desarrollo de Software en U.P.E. Con una sólida formación en tecnología. Anteriormente completé la carrera de Desarrolador Frontend en CoderHouse, que consistió en tres cursos en total. Además, tengo una diplomatura en Ciencia de Datos e Inteligencia Artificial de la Universidad Nacional de San Martín (UNSAM). 
-</p> -->
-<!-- <p class="text-black">Soy un desarrollador con un espíritu emprendedor y autodidacta en constante aprendizaje. Actualmente, trabajo como freelancer creando proyectos a medida en React, sitios web estaticos con Astro e intereactivos con JavaScript. Para estilar utilizo Tailwind o Boostrap. Además, he adquirido un buen dominio de Git lo que me permite gestionar eficientemente el control de versiones de mis proyectos y colaborar de manera efectiva con otros desarrolladores. 
-            </p> -->
